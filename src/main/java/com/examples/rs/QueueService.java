@@ -18,6 +18,10 @@ public interface QueueService {
 	@GET
 	@Path("/messages/generate/mdb")
 	public void generateMessagesToMDBQueue();
+        
+        @GET
+        @Path("/messages/mdb/consumers/start")
+        public void startListenersForMDBQueue();
 	
 	@GET
 	@Path("/messages/generate/selector")
